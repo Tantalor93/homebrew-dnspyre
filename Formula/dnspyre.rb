@@ -2,16 +2,15 @@ class Dnspyre < Formula
   desc "CLI tool for a high QPS DNS benchmark"
   homepage "https://github.com/Tantalor93/dnspyre"
   url "git@github.com:Tantalor93/dnspyre", :using => :git,
-      revision: "772780531c40ffffc7b01da11225b01865f4f1fa"
-  version "2.0.1"
+      revision: "cb06a409d881545b81a4a2e4f2c3e37fc73e3460"
+  version "2.1.0"
 
   head "git@github.com:Tantalor93/dnspyre.git", :using => :git
 
   depends_on "go" => :build
 
   def install
-    system "make", "VERSION=2.0.1", "build"
+    system "make", "VERSION=2.1.0", "build"
     bin.install "bin/dnspyre"
   end
 end
-
