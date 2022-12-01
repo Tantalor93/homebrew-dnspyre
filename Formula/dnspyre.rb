@@ -5,20 +5,20 @@
 class Dnspyre < Formula
   desc ""
   homepage "https://github.com/Tantalor93/dnspyre"
-  version "2.5.2"
+  version "2.5.3"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/Tantalor93/dnspyre/releases/download/v2.5.2/dnspyre_Darwin_arm64.tar.gz"
-      sha256 "6aa3ece6e259aad581fc1bf8d7444d8d1115945c577da561bec92758b9350ab4"
+      url "https://github.com/Tantalor93/dnspyre/releases/download/v2.5.3/dnspyre_Darwin_arm64.tar.gz"
+      sha256 "43fc207318da8145d539faa4daaeb3247764afaedab78f6250c826693c5ae071"
 
       def install
         bin.install "dnspyre"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/Tantalor93/dnspyre/releases/download/v2.5.2/dnspyre_Darwin_x86_64.tar.gz"
-      sha256 "8ca33e1190e18ccec18f7ed4fffb0a2010b6b813778c62c55cc5afc0b11c6de3"
+      url "https://github.com/Tantalor93/dnspyre/releases/download/v2.5.3/dnspyre_Darwin_x86_64.tar.gz"
+      sha256 "b14dd63f9a221bffb0c83ed906cf3532167fbcacd8d5c2ee87f87004ca5713d5"
 
       def install
         bin.install "dnspyre"
@@ -28,16 +28,16 @@ class Dnspyre < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Tantalor93/dnspyre/releases/download/v2.5.2/dnspyre_Linux_arm64.tar.gz"
-      sha256 "f333ad992b260735d808659cea83c0cce3fe584ca412854bfc4913670decb8b5"
+      url "https://github.com/Tantalor93/dnspyre/releases/download/v2.5.3/dnspyre_Linux_arm64.tar.gz"
+      sha256 "e355db428ea3a7245087da0c13bb04abb1afcf9021ca02b47a308005f3bfadda"
 
       def install
         bin.install "dnspyre"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/Tantalor93/dnspyre/releases/download/v2.5.2/dnspyre_Linux_x86_64.tar.gz"
-      sha256 "2ccb261a3e522e43927e4894eb56d67f95cd92934e401834d347baaf4fd7cd10"
+      url "https://github.com/Tantalor93/dnspyre/releases/download/v2.5.3/dnspyre_Linux_x86_64.tar.gz"
+      sha256 "ffa3875d36ddced88d4407c4b766b07944de09b50879ceac46375512a434498e"
 
       def install
         bin.install "dnspyre"
