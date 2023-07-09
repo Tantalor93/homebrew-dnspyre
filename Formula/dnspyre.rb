@@ -10,24 +10,24 @@ class Dnspyre < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/Tantalor93/dnspyre/releases/download/v2.14.1/dnspyre_Darwin_arm64.tar.gz"
-      sha256 "f4345a444c1067848ba3af0fb1d310f300fc1249f44c149007b1b0fb32cf7021"
+      sha256 "1c6a97038fb7301ab96ca1497dba01be41aac8b7f8f42238a51481bd7e92b001"
 
       def install
         bin.install "dnspyre"
         bash_completion.install "completions/dnspyre.bash" => "_dnspyre"
         zsh_completion.install "completions/dnspyre.zsh" => "_dnspyre"
-        man1.install "manpages"
+        man1.install Dir["manpages/*.1"]
       end
     end
     if Hardware::CPU.intel?
       url "https://github.com/Tantalor93/dnspyre/releases/download/v2.14.1/dnspyre_Darwin_x86_64.tar.gz"
-      sha256 "642f36e4683b46542c1f3753265a6b2c2dee5b6df3ed3b76e5064c50fa379a2f"
+      sha256 "e13f5647f668aa314e8c896164ba4127e387ba51f645971ad1c815bf41ab70e4"
 
       def install
         bin.install "dnspyre"
         bash_completion.install "completions/dnspyre.bash" => "_dnspyre"
         zsh_completion.install "completions/dnspyre.zsh" => "_dnspyre"
-        man1.install "manpages"
+        man1.install Dir["manpages/*.1"]
       end
     end
   end
@@ -35,24 +35,24 @@ class Dnspyre < Formula
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/Tantalor93/dnspyre/releases/download/v2.14.1/dnspyre_Linux_arm64.tar.gz"
-      sha256 "7ec0210c11b1fa50bc89c1de9e77199e2b8a0b54f02436d9b0b3eeedb5098304"
+      sha256 "72fd22ecba1dacfd1ee1c281226ee1e8d2356cbb7ee4c848d9330092f0704678"
 
       def install
         bin.install "dnspyre"
         bash_completion.install "completions/dnspyre.bash" => "_dnspyre"
         zsh_completion.install "completions/dnspyre.zsh" => "_dnspyre"
-        man1.install "manpages"
+        man1.install Dir["manpages/*.1"]
       end
     end
     if Hardware::CPU.intel?
       url "https://github.com/Tantalor93/dnspyre/releases/download/v2.14.1/dnspyre_Linux_x86_64.tar.gz"
-      sha256 "a7a6d19dc3195bc99cc3535a1ff1bd22d94354578ad09a31ba1b13fc112a0c9b"
+      sha256 "9ed6fc2a08921a2371be2557948edd222179d3ebfe74ea196a5a0e821fdbf854"
 
       def install
         bin.install "dnspyre"
         bash_completion.install "completions/dnspyre.bash" => "_dnspyre"
         zsh_completion.install "completions/dnspyre.zsh" => "_dnspyre"
-        man1.install "manpages"
+        man1.install Dir["manpages/*.1"]
       end
     end
   end
