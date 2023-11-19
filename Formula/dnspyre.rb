@@ -5,12 +5,12 @@
 class Dnspyre < Formula
   desc ""
   homepage "https://tantalor93.github.io/dnspyre/"
-  version "2.18.2"
+  version "2.19.0"
 
   on_macos do
-    if Hardware::CPU.intel?
-      url "https://github.com/Tantalor93/dnspyre/releases/download/v2.18.2/dnspyre_darwin_amd64.tar.gz"
-      sha256 "b407cc59ed96492c9f841dce78337c55fe8d37c979cbd9af81275ab66483697e"
+    if Hardware::CPU.arm?
+      url "https://github.com/Tantalor93/dnspyre/releases/download/v2.19.0/dnspyre_darwin_arm64.tar.gz"
+      sha256 "64e9e39b7cbff589ba014b70b601495defeaee1020ddfebf7b95dd126d554b4d"
 
       def install
         bin.install "dnspyre"
@@ -19,9 +19,9 @@ class Dnspyre < Formula
         man1.install Dir["manpages/*.1"]
       end
     end
-    if Hardware::CPU.arm?
-      url "https://github.com/Tantalor93/dnspyre/releases/download/v2.18.2/dnspyre_darwin_arm64.tar.gz"
-      sha256 "9d3586e476749882d6e63977784940494159c44b88210fc6839cc8d491168631"
+    if Hardware::CPU.intel?
+      url "https://github.com/Tantalor93/dnspyre/releases/download/v2.19.0/dnspyre_darwin_amd64.tar.gz"
+      sha256 "eee89fa740d3149f92407905ab5d183248c17c048b7fa5fc8edceedd6ed9abaf"
 
       def install
         bin.install "dnspyre"
@@ -34,8 +34,8 @@ class Dnspyre < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/Tantalor93/dnspyre/releases/download/v2.18.2/dnspyre_linux_amd64.tar.gz"
-      sha256 "eeb792a713593b54faa47615cd120ea27dd3cf1d3bd03d175ad7ecfcb6972711"
+      url "https://github.com/Tantalor93/dnspyre/releases/download/v2.19.0/dnspyre_linux_amd64.tar.gz"
+      sha256 "32a5ccbffd64bfcd5026d13efa62171af1189e798779a0a7dc16ba79cb8a2705"
 
       def install
         bin.install "dnspyre"
@@ -45,8 +45,8 @@ class Dnspyre < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Tantalor93/dnspyre/releases/download/v2.18.2/dnspyre_linux_arm64.tar.gz"
-      sha256 "8f4d6f5e9e53982623f8f477262590648c03f083b65a0afc53222e1c6d3ba45b"
+      url "https://github.com/Tantalor93/dnspyre/releases/download/v2.19.0/dnspyre_linux_arm64.tar.gz"
+      sha256 "dc18ffcc3c1026862c34fe824d98ac2db34fa9f00791eb65f3647bb47708f4bd"
 
       def install
         bin.install "dnspyre"
