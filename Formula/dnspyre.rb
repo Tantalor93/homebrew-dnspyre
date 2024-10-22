@@ -5,12 +5,12 @@
 class Dnspyre < Formula
   desc ""
   homepage "https://tantalor93.github.io/dnspyre/"
-  version "3.4.0"
+  version "3.4.1"
 
   on_macos do
     on_intel do
-      url "https://github.com/Tantalor93/dnspyre/releases/download/v3.4.0/dnspyre_darwin_amd64.tar.gz"
-      sha256 "6310930bf84c5ec26d0cc0422a702bd4d31fd7850ab69766271d3b4266b2445b"
+      url "https://github.com/Tantalor93/dnspyre/releases/download/v3.4.1/dnspyre_darwin_amd64.tar.gz"
+      sha256 "558cbdd17b4917c8712fe716b763761583b4ca62795618155b93e825853b70d2"
 
       def install
         bin.install "dnspyre"
@@ -20,8 +20,8 @@ class Dnspyre < Formula
       end
     end
     on_arm do
-      url "https://github.com/Tantalor93/dnspyre/releases/download/v3.4.0/dnspyre_darwin_arm64.tar.gz"
-      sha256 "c4edce69fae7e011ef6477c7516430b173d97ce0b491a6cfde0347e3d2528b85"
+      url "https://github.com/Tantalor93/dnspyre/releases/download/v3.4.1/dnspyre_darwin_arm64.tar.gz"
+      sha256 "7650b4df070b949f5a649620f5b53e78d54bdf0eb2fee1b82c1a28089c6375bb"
 
       def install
         bin.install "dnspyre"
@@ -35,8 +35,8 @@ class Dnspyre < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/Tantalor93/dnspyre/releases/download/v3.4.0/dnspyre_linux_amd64.tar.gz"
-        sha256 "60720894a9363611ef14c89f3f8e4e871868292f399d16a397d9c2d981a0b6a1"
+        url "https://github.com/Tantalor93/dnspyre/releases/download/v3.4.1/dnspyre_linux_amd64.tar.gz"
+        sha256 "cb3445ef739297c554eec57617cd2405107f15b5a954c0aadd7a875c93a6af82"
 
         def install
           bin.install "dnspyre"
@@ -48,8 +48,8 @@ class Dnspyre < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/Tantalor93/dnspyre/releases/download/v3.4.0/dnspyre_linux_arm64.tar.gz"
-        sha256 "b05d29585f03c167d3b9e9a6b91e5178704cad561eb57b7547cd8fe089e00703"
+        url "https://github.com/Tantalor93/dnspyre/releases/download/v3.4.1/dnspyre_linux_arm64.tar.gz"
+        sha256 "511dec4b5697feea3f3b15aa74591fa3fb210da4e94376a59a930b2e45fb15d8"
 
         def install
           bin.install "dnspyre"
